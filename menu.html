@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | Angel's Café</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+
+    <h1>Angel's Café</h1>
+
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+  </header>
+
+  <!-- MENU SECTION -->
+  <section class="menu">
+
+    <h2>Our Signature Menu</h2>
+
+    <div class="menu-container">
+
+      <div class="card">
+        <h3>Espresso Noir</h3>
+        <p>Rich bold espresso with deep aroma.</p>
+        <p>₱150</p>
+        <button onclick="addToCart('Espresso Noir')">Add to Order</button>
+      </div>
+
+      <div class="card">
+        <h3>Golden Latte</h3>
+        <p>Smooth latte with a hint of vanilla cream.</p>
+        <p>₱180</p>
+        <button onclick="addToCart('Golden Latte')">Add to Order</button>
+      </div>
+
+      <div class="card">
+        <h3>Caramel Macchiato</h3>
+        <p>Layered espresso with caramel drizzle.</p>
+        <p>₱200</p>
+        <button onclick="addToCart('Caramel Macchiato')">Add to Order</button>
+      </div>
+
+      <div class="card">
+        <h3>Chocolate Velvet</h3>
+        <p>Luxury hot chocolate with creamy finish.</p>
+        <p>₱190</p>
+        <button onclick="addToCart('Chocolate Velvet')">Add to Order</button>
+      </div>
+
+      <div class="card">
+        <h3>Iced Royal Brew</h3>
+        <p>Chilled premium coffee over ice.</p>
+        <p>₱170</p>
+        <button onclick="addToCart('Iced Royal Brew')">Add to Order</button>
+      </div>
+
+      <div class="card">
+        <h3>Signature Tea Blend</h3>
+        <p>Elegant herbal tea for relaxation.</p>
+        <p>₱140</p>
+        <button onclick="addToCart('Signature Tea Blend')">Add to Order</button>
+      </div>
+
+    </div>
+    <!-- ORDER SECTION -->
+  <section class="contact">
+
+    <h2>Send your order</h2>
+
+    <p style="margin-bottom: 20px; color: #aaa;">
+      Deliver your order details and we will get back to you as soon as possible.
+    </p>
+
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="address" id="address" placeholder="Your Address">
+
+    <button onclick="sendOrder()">Send Order</button>
+
+    <p id="msg" style="margin-top: 15px;"></p>
+
+  </section>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Angel's Café. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
